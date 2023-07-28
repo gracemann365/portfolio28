@@ -9,11 +9,15 @@
 <body>
 
     <div id="header">
+        
     
           <div class="container">
 
         <nav>
-              <img src="icons/Gracemann28.png" alt="logo-Gracemann" class="logo">
+            
+            <h1 class="logo">Grace<span>mann</span>™</h1>
+
+              <!--<img src="icons/Gracemann28.png" alt="logo-Gracemann" class="logo">-->
               <ul>
 
                 <li><a href="#">Home</a></li>
@@ -37,9 +41,89 @@
           </div>
 
      </div>
+<br>
+<br>
+     <div class="about">
+        <div class="container">
+            <div class="row">
+
+                        <div class="about-col-1">
+
+                           <img src="icons/userx.png" alt="David Grace"> 
+                        </div>
+
+                        <div class="about-col-2">
+                               <h1 class="subtitle"><span>My</span> Story</h1>
+                               <br>
+                               <p style="text-align: justify; max-width: 600px;line-height: 2.0; size: 30px;">
+                                I am a passionate software engineer with exceptional problem-solving skills, driven by a profound love for crafting innovative solutions. Thriving in team environments, I believe collaboration fuels creativity and success. My adaptability to various technologies empowers me to approach challenges from multiple angles, ensuring optimal results.
+                                Committed to continuous learning and growth, I actively seek out new knowledge to stay at the forefront of the ever-evolving tech landscape. Beyond the workplace, I enjoy exploring personal projects, experimenting with ideas that push my skills further.
+                                With a relentless drive to make a positive impact through technology, I take pride in seeing my creations come to life. As a perpetual learner and enthusiastic coder, I am always excited about the endless possibilities software development offers.
+                                </p>
+                                
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('Skill-Set')">Skill-Set</p>
+                                    <p class="tab-links " onclick="opentab('Work-Experience')">Work-Experience</p>
+                                    <p class="tab-links " onclick="opentab('Education')">Education</p>
+                                </div>
+
+                                <div class="tab-contents active-tab" id="Skill-Set">
+                                    <ul>
+                                        <li><span>Front End Development</span><br>Designing Responsive and Dynamic visual Interfaces for Web-Apps</li>
+                                        <li><span>Back End Development</span><br>Handling Databases,Server Scripts and API-integration for Web-Apps</li>
+                                        <li><span>Machine Learning</span><br>Foundational approach to Machine Learning Integrated Web-Apps</li>
+                                    </ul>
+                                </div>
+
+                                
+                                <div class="tab-contents" id="Work-Experience">
+                                    <ul>
+                                        <li><span>Technical Head - Indian Society for Technical Education (ISTE)</span><br>As Tech Head, I lead tech initiatives, manage projects, and optimize systems for ISTE</li>
+                                        <li><span>Public Relations Co-ordinator - Model United Nations Society GECBH</span><br>As PR Coordinator, I manage communications, promote events, and enhance the reputation of MUN-GECBH.</li>
+                                        <li><span>Official Campus Ambassador - International Module United Nations</span><br>I promote International MUN, engage students, and foster participation in global diplomacy and leadership.</li>
+                                    </ul>
+                                </div>
 
 
-     
+                                
+                                <div class="tab-contents" id="Education">
+                                    <ul>
+                                        <li><span>Government Engineering College Bartonhill Trivandrum</span><br>Bachelor Of Technology - Information Technology</li>
+                                    </ul>
+                                </div>
+
+
+                                
+                                
+                        </div>
+            </div>
+        </div>
+     </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        //we are basically clearing out the previous selected details and higlight
+        for(tablink of tablinks){
+
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+
+            tabcontent.classList.remove("active-tab");
+
+        }
+        //now the clicked target is displayed
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
     
 </body>
 </html>
