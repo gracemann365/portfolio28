@@ -109,7 +109,8 @@ nav ul li a:hover::after{
 
 /**Get To Know me **/
 
-.about{
+#about{
+    margin-top: 200px;
     padding: 140px 0;
     color:#ffffff;
 }
@@ -220,7 +221,7 @@ nav ul li a:hover::after{
 
   .mini-container h1{
     font-size: 60px;
-    font-weight: 600;
+    font-weight: 100;
   }
 
 .consult-list{
@@ -355,3 +356,153 @@ nav ul li a:hover::after{
     height:100%;
   } 
 
+
+/**contancts**/   
+
+#contacts{
+    margin-top: 251px;
+    margin-bottom: 251px;
+}
+
+
+.contact-left{
+    padding-left: 45px;
+    margin-top: 250px;
+    flex-basis:35%;
+}
+
+
+
+.title{
+
+   
+    font-weight:400;
+    font-size: 70px;
+    padding-bottom:20px;
+
+
+
+}
+
+.contact-right{
+    padding-left: 45px;
+    margin-top: 250px;
+    flex-basis:60%;
+}
+
+
+.contact-left p{
+    margin-top: 30px;
+
+}
+
+.contact-left p i{
+    color:#08b605;
+    margin-right:15px;
+    font-size:25px;
+    padding-left: 20px;
+}
+.socials{
+    margin-top: 50px;
+    padding-left:20px;
+}
+
+.socials i{
+
+    padding-right:70px;
+    font-size: 30px;
+}
+
+.socials a{
+
+    text-decoration: none;
+    color:#08b605;;
+    display: inline-block;
+    transition:transform 0.5s;
+}
+
+
+.socials a:hover{
+    color:#ff004f;
+    transform:translateY(-12px);
+}
+
+/* Button Styles */
+.btn {
+    margin: 50px 20px;
+    
+    padding: 10px 20px;
+    border: none;
+    background-color: #0cef14; /* Green color */
+    color: #000000; /* White text color */
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Removes underline for links */
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background-color: #d0f637; /* Darker green on hover */
+  }
+
+
+  .contanct-right form{
+
+    width:80%;
+
+
+  }
+
+  form input,form textarea{
+    width:80%;
+    border:0;
+    outline:none;
+    background:#dffddca3;
+    padding:15px 50px;
+    margin:15px;
+    color:#000000;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  
+
+  .copyright{
+    width:100%;
+    text-align: center;
+    padding:25px 0;
+    background: rgb(6, 255, 6) ;
+    margin-top: 200px;
+    color: #000000;
+
+  }
+
+
+
+  /* Button Styles */SS
+.back-to-home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #000000b3;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 9999; /* Ensures the button appears on top of other elements */
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-home-btn:hover {
+    background-color: #2078b5;
+  }
+
+  .back-to-home-btn i{
+    width:100%;
+  }
+  
