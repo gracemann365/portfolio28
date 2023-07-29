@@ -45,9 +45,9 @@ Get In Touch
 
 Functionalities to add :
 <ol>
-<li>  API integrated XLSV contact data storage </li>
-<li>  Linking all socials and Resume  </li>
-<li>  Linking all deployed projects  </li>
+<li>  API integrated XLSV contact data storage - could do it using third party API , not in a mood I just spent 5hrs on custom styling 🥺</li>
+<li>  Linking all socials and Resume ✅ </li>
+<li>  Linking all deployed projects : 1/4  rest of them under CODE REVIEW and REVISION</li>
 <li>  Updating the readme ✅ </li>
 </ol>
 
