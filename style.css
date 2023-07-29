@@ -505,4 +505,123 @@ nav ul li a:hover::after{
   .back-to-home-btn i{
     width:100%;
   }
+
+/**responsive for small screens**/
+  nav .fa-solid{
+    display : none;
+  }
+  @media only screen and (max-width: 600px) {
+    #header{
+        background-image:url(icons/bgp2.png);
+
+    }
+
+    .header-text{
+
+        margin-top:15%;
+        font-size:15px;
+    }
+
+
+    .header-text h1{
+        font-size:25px;
+        padding-right: 30px;
+    }
+
+    nav .fa-solid{
+        display : block;
+        font-size:25px;
+      }
+
+      nav ul{
+        background:#08b605;
+        position:fixed;
+        top:0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index:2;
+
+        transition:right 0.5s;
+
+
+
+      }
+
+      nav ul li{
+                display:block;
+                margin:25px;
+
+
+      }
+
+      nav ul .fa-solid{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+
+      }
+
+      nav .fa-solid.fa-bars{
+        margin-right: 30px;
+      }
+
+
+      #about .subtitle{
+        font-size: 40px;
+       
+      }
+
+      #about .about-col-2 {
+        margin-left: 20px;
+        margin-right: 20px;
+        
+      }
+
+      #about .about-col-1, .about-col-2{
+        flex-basis:100%
+      }
+
+      #about .about-col-1{
+        margin-bottom:20px;
+      }
+
+      #about .about-col-2 p{
+        font-size: 12px;
+      }
+
+      #about .about-col-2 .tab-titles .tab-links{
+        font-size: 11px;
+        font-weight: 600;
+        color:#00ff22;
+      }
+
+      #about .about-col-2 .tab-contents li{
+        font-size: 80%;
+      }
+
+      #about .about-col-2 .tab-contents span{
+        font-size:120%;
+      }
+
+      .contact-left,.contact-right{
+            flex-basis: 100%;
+      }
+      #contacts .title{
+
+        font-size:50px;
+
+      }
+
+      #contacts .contact-left .socials i{
+                padding-right: 60px;
+
+      }
+
+      #contacts .contact-left form{
+        margin-top: none;
+      }
+  }
   

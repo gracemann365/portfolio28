@@ -22,16 +22,17 @@
             <h1 class="logo">Grace<span>mann</span>™</h1>
 
               <!--<img src="icons/Gracemann28.png" alt="logo-Gracemann" class="logo">-->
-              <ul>
+              <ul id="sidemenu">
 
                 <li><a href="#">Home</a></li>
                 <li><a href="#consultant">Consultant</a></li>
                 <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#about">Know Me</a></li>
                 <li><a href="#contacts">Get In Touch</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: #00f01c;"></i>
 
               </ul>
-            
+              <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #00ff11;" id="sidemenu"></i>
         </nav>
         <div class="header-text">
         <p>Software <span>Engineer</span></p>
@@ -298,6 +299,22 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
     }
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+   
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
 </script>
 
     
