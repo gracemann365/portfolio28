@@ -534,8 +534,11 @@ nav ul li a:hover::after{
       }
 
       nav ul{
-        background:#08b605;
-        position:fixed;
+        background-image: linear-gradient(135deg, rgba(0, 253, 51, 0.5), rgba(0, 253, 51, 0.9)); /* Greenish gradient */
+    backdrop-filter: blur(10px); /* Add a blur effect to create a glass-like appearance */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+       border-radius: 10px; 
+       position:fixed;
         top:0;
         right:-200px;
         width:200px;
@@ -556,6 +559,7 @@ nav ul li a:hover::after{
 
       }
 
+    
       nav ul .fa-solid{
         position:absolute;
         top:25px;
