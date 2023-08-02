@@ -1,5 +1,5 @@
 v1.0.0 : Vanilla Front End (responsive)
-<br>Github ✅-> Deploy ✅-> LinkedIn -> NovoR
+<br>Github ✅-> Deploy ✅-> LinkedIn✅ -> NovoR
 Index.html
 <br>
 <br>
