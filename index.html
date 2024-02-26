@@ -57,11 +57,12 @@
         <div class="container">
             <div class="row">
 
-                        <div class="about-col-1">
-
-                           <img src="icons/userx.png" alt="David Grace"> 
-                        </div>
-
+                <div class="about-col-1">
+                    <div style="width:100%;height:0;padding-bottom:86%;position:relative;">
+                        <iframe src="https://giphy.com/embed/IcZhFmufozDCij3p22" width="100%" height="100%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
                         <div class="about-col-2">
                                <h1 class="subtitle"><span>My</span> Story <span> <i class="fa-regular fa-comment-dots" style="color: #16c041;"></i></span></h1>
                                <br>
@@ -240,23 +241,25 @@
 
                 <div class="contact-left">
                     <h1 class="title">Get In Touch</h1>
-                    <p><i class="fa-solid fa-envelope" style="color: #19f550;"></i>  gracemann365@gmail.com</p>
+                    <p><i class="fa-solid fa-envelope" style="color: #19f550;"></i>gracemann365@gmail.com</p>
                      <div class="socials">
                         <a href="https://www.linkedin.com/in/david-grace/"><i class="fa-brands fa-linkedin" ></i></a>
                         <a href="https://github.com/Gracemann365"><i class="fa-brands fa-github" ></i></a>
                         <a href="https://leetcode.com/Gracemann365/"><i class="fa-solid fa-code" ></i></a>
                      </div>
-                     <a href="#" class="btn">Download Resume</a>
+                     <a href="https://drive.google.com/uc?export=download&id=1oh-vUN6d4rFgGPa9OPUIQcmXk9MBXUA4" class="btn" download>Download Resume</a>
+
 
                 </div>
                 <div class="contact-right">
-                    <form action="">
-                        <input type="text" name="Name"  placeholder="Your Full Name" required>
+                    <form action="send_mail.php" method="post">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="6" placeholder="Your Message"></textarea><br>
-                        <button type="submit"class="btn" >Submit</button>
+                        <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>
+                
 
             </div>
 
