@@ -285,13 +285,13 @@ nav ul li a:hover::after{
   }
 
 
-  .work{
+  .work {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 600px; /* Adjust the height as needed */
+}
 
-        border-radius:20px;
-        position:relative;
-        overflow:hidden;
-
-  }
 
 
   .work img{

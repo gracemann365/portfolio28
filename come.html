@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://images.pexels.com/photos/15286/pexels-photo.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 50px;
+            color: #0d320d; /* Change the color to green */
+            text-shadow: 2px 2px 4px #000000;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+            }
+            to {
+                text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00;
+            }
+        }
+
+       /* Responsive styling */
+       @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 50px;
+        }
+        iframe {
+            width: 250px;
+            height: 250px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <iframe src="https://giphy.com/embed/xdkXW7Scx6gus" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+            
+</body>
+</html>
