@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+<script src="https://threejs.org/build/three.js"></script>
+
+
 </head>
 <body>
   
@@ -61,64 +67,50 @@
 <br>
 <a href="#" class="back-to-home-btn"><i class="fa-solid fa-arrow-up" style="color: #00ff04;"></i></a>
  <!--about-->   
-
-     <div id="about">
-        <div class="container">
-            <div class="row">
-
-                <div class="about-col-1">
-                    <div style="width:100%;height:0;padding-bottom:86%;position:relative;">
-                        <iframe src="https://giphy.com/embed/IcZhFmufozDCij3p22" width="100%" height="100%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen></iframe>
-                    </div>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!--PUT SOMETHING INTRESTING HERE -->  
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle"><span>My</span> Story <span> <i class="fa-regular fa-comment-dots" style="color: #16c041;"></i></span></h1>
+                <br>
+                <p style="text-align: justify; max-width: 600px;line-height: 2.0; size: 30px;">
+                    I am a passionate software engineer with exceptional problem-solving skills, driven by a profound love for crafting innovative solutions. Thriving in team environments, I believe collaboration fuels creativity and success. My adaptability to various technologies empowers me to approach challenges from multiple angles, ensuring optimal results.
+                    Committed to continuous learning and growth, I actively seek out new knowledge to stay at the forefront of the ever-evolving tech landscape. Beyond the workplace, I enjoy exploring personal projects, experimenting with ideas that push my skills further.
+                    With a relentless drive to make a positive impact through technology, I take pride in seeing my creations come to life. As a perpetual learner and enthusiastic coder, I am always excited about the endless possibilities software development offers.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skill-Set')">Skills</p>
+                    <p class="tab-links " onclick="opentab('Work-Experience')">Experience</p>
+                    <p class="tab-links " onclick="opentab('Education')">Education</p>
                 </div>
-                
-                        <div class="about-col-2">
-                               <h1 class="subtitle"><span>My</span> Story <span> <i class="fa-regular fa-comment-dots" style="color: #16c041;"></i></span></h1>
-                               <br>
-                               <p style="text-align: justify; max-width: 600px;line-height: 2.0; size: 30px;">
-                                I am a passionate software engineer with exceptional problem-solving skills, driven by a profound love for crafting innovative solutions. Thriving in team environments, I believe collaboration fuels creativity and success. My adaptability to various technologies empowers me to approach challenges from multiple angles, ensuring optimal results.
-                                Committed to continuous learning and growth, I actively seek out new knowledge to stay at the forefront of the ever-evolving tech landscape. Beyond the workplace, I enjoy exploring personal projects, experimenting with ideas that push my skills further.
-                                With a relentless drive to make a positive impact through technology, I take pride in seeing my creations come to life. As a perpetual learner and enthusiastic coder, I am always excited about the endless possibilities software development offers.
-                                </p>
-                                
-                                <div class="tab-titles">
-                                    <p class="tab-links active-link" onclick="opentab('Skill-Set')">Skills</p>
-                                    <p class="tab-links " onclick="opentab('Work-Experience')">Experience</p>
-                                    <p class="tab-links " onclick="opentab('Education')">Education</p>
-                                </div>
-
-                                <div class="tab-contents active-tab" id="Skill-Set">
-                                    <ul>
-                                        <li><span>Languages</span><br>Python, Java, HTML, CSS, JavaScript</li>
-                                        <li><span>Frameworks</span><br> ReactJS, ExpressJS, NodeJS, NextJS</li>
-                                        <li><span>DB-&-API</span><br>MongoDB, MySQL, Git/GitHub, REST API</li>
-                                    </ul>
-                                </div>
-
-                                
-                                <div class="tab-contents" id="Work-Experience">
-                                    <ul>
-                                        <li><span>Technical Head - Indian Society for Technical Education (ISTE)</span><br>As Tech Head, I lead tech initiatives, manage projects, and optimize systems for ISTE</li>
-                                        <li><span>Public Relations Co-ordinator - Model United Nations Society GECBH</span><br>As PR Coordinator, I manage communications, promote events, and enhance the reputation of MUN-GECBH.</li>
-                                        <li><span>Official Campus Ambassador - International Module United Nations</span><br>I promote International MUN, engage students, and foster participation in global diplomacy and leadership.</li>
-                                    </ul>
-                                </div>
-
-
-                                
-                                <div class="tab-contents" id="Education">
-                                    <ul>
-                                        <li><span>Government Engineering College Bartonhill Trivandrum</span><br>Bachelor Of Technology - Information Technology</li>
-                                    </ul>
-                                </div>
-
-
-                                
-                                
-                        </div>
+                <div class="tab-contents active-tab" id="Skill-Set">
+                    <ul>
+                        <li><span>Languages</span><br>Python  •  Java  •  HTML  •  CSS  •  TypeScript</li>
+                        <li><span>Frameworks</span><br> ReactJS  •  ExpressJS  •  NodeJS  •  NextJS</li>
+                        <li><span>Database</span><br>MongoDB-Atlas  •  MySQL  •  Mongoose (ODM)</li>
+                        <li><span>Developer Tools</span><br>Powershell Scripting  •  Git/GitHub  •  REST API</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Work-Experience">
+                    <ul>
+                        <li><span>TECHNICAL <HEAD></HEAD> - ISTE [ ROBOTICS ]</span><br>As Tech Head, I lead tech initiatives, manage projects, and optimize systems for ISTE</li>
+                        <li><span>PR HEAD - GECBH MUN SOCIETY</span><br>As PR Coordinator, I manage communications, promote events, and enhance the reputation of MUN-GECBH.</li>
+                        <li><span>CA - INTERNATIONAL MUN</span><br>I promote International MUN, engage students, and foster participation in global diplomacy and leadership.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>GEC Bartonhill Trivandrum</span><br>BTECH - Information Technology</li>
+                    </ul>
+                </div>
             </div>
         </div>
-     </div>
+    </div>
+</div>
 
 
 
@@ -184,41 +176,54 @@
          <div class="mini-container">
             <h1 class="subtitle"> Projects </h1>
          </div>
-
-          <div class="work-list">
-
-               <div class="work">
-                    <img alt="news webapp" src="https://images.unsplash.com/photo-1584359983106-ef9366f27454?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=364&q=80" >
-                    <div class="layer">
-                    <h3>RaptorFeed™</h3>
-                    <p>RaptorFeed is a multi-section grid view news app that provides a seamless browsing experience for desktop users while offering an enjoyable swipe-down interaction for mobile users. The app is designed using vanilla front-end technologies, without relying on any frameworks, and it fetches news data from a REST API in JSON format.<br>features : Grid View Layout <br>Swipe-Down Interaction <br> Full News on Click</p>
-                    <a href="https://gracemann365.github.io/RaptorFeed/"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
-                   </div>
-
-               </div>
-
-               <div class="work">
-                   <img alt="Insight365" src="https://images.unsplash.com/photo-1613442301239-ea2478101ea7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80" >   
-
-                   <div class="layer">
-                   <h3>Insight365™️</h3>
-                   <p>Tech Lead Project Efficiency Tool , HTML, CSS, JS, ReactJS, Nivo Charts, Formik It empowers with project analysis, insights . Customizable themes, interactive charts. FAQ support, customizable forms, calendar integration</p>
-                   <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
-                  </div>
-
-               </div>
-
-               <div class="work">
-                <img alt="MERN E-commerce App" src="https://images.unsplash.com/photo-1576608648778-dc30935c9463?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" >   
-
-               <div class="layer">
-                    <h3>Firefly™️</h3>
-                    <p>Introducing Innovative Social Networking Platform - Built with React, Next JS, MongoDB. Unique CSS layouts, rapid authentication. Managed real-time events, deployment. Explored Zod validation, React Hook Form for forms. Coming soon!</p>
+         <div class="work-list">
+            <div class="work">
+                <img alt="Dhamaka-OTT API" src="https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);">
+                    <h3>Dhamaka-OTT API</h3>
+                    <p>Built with Node.js, Express.js, TypeScript, MongoDB Atlas, Jest, and PowerShell. Enables seamless management of OTT movies via a backend RESTful API with robust testing and automation. Empowers administrators with secure access controls and role-based permissions for data management.</p>
                     <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
-                   </div>
-
-               </div>
-     
+                </div>
+            </div>
+        
+            <div class="work" >
+                <img alt="HIDS (Home Intrusion Detection System)" src="https://images.pexels.com/photos/12905953/pexels-photo-12905953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);">
+                    <h3>HIDS (Home Intrusion Detection System)</h3>
+                    <p>Built with Python, OpenCV, Flask, HTML, CSS, JS, YOLOv8, SMTP. Empowers with computer vision monitoring, humanoid detection, alarm trigger, and SMTP alerts for home security.</p>
+                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img alt="RaptorFeed" src="https://images.unsplash.com/photo-1584359983106-ef9366f27454?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=364&q=80">
+                <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);">
+                    <h3>RaptorFeed</h3>
+                    <p>Developed with HTML, CSS, JavaScript, REST API, JSON. Implemented Grid View Layout, Swipe-Down Interaction, Full News on Click.</p>
+                    <a href="https://gracemann365.github.io/RaptorFeed/"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img alt="EsSML" src="https://images.pexels.com/photos/17399467/pexels-photo-17399467/free-photo-of-crying-woman-in-black-and-white.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #3f05eec5);">
+                    <h3>EsSML </h3>
+                    <p> EsSML (Emotionaly Sentient System using ML) leverages ML , OpenCV to detect emotions, displaying them on a Flask web app with auto-routed mood-based YouTube playlists for immersive experiences.</p>
+                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+                <img alt="Firefly" src="https://images.unsplash.com/photo-1629907718976-9c91ca3b76b3?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #3f05eec5);">
+                    <h3>Firefly</h3>
+                    <p>Developed using React, Next JS, JavaScript, MongoDB. Implemented unique CSS layouts, rapid authentication. Managed real-time events, application architecture, deployment.</p>
+                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        
         
          </div>
 
@@ -238,18 +243,20 @@
             <div class="row">
 
                 <div class="contact-left">
-                    <h1 class="title">Get In Touch</h1>
-                    <p><i class="fa-solid fa-envelope" style="color: #19f550;"></i>gracemann365@gmail.com</p>
+                    <h1 class="title" style="font-weight: bold;">Get In Touch</h1>
+                    <p><i class="fa-solid fa-envelope" style="color: #19f550;"></i><a href="mailto:gracemann365@gmail.com" style="text-decoration: none; color: inherit;">gracemann365@gmail.com</a></p>
                      <div class="socials">
                         <a href="https://www.linkedin.com/in/david-grace/"><i class="fa-brands fa-linkedin" ></i></a>
                         <a href="https://github.com/Gracemann365"><i class="fa-brands fa-github" ></i></a>
                         <a href="https://leetcode.com/Gracemann365/"><i class="fa-solid fa-code" ></i></a>
+                        <a href="https://codeforces.com/profile/gracemann111"><i class="fa-solid fa-bug"></i></a>
                      </div>
                      <a href="https://drive.google.com/file/d/16Byq8E8komaLFG1eKzQMepLZrF-Cye2C/view?usp=sharing" class="btn" download>Download Resume</a>
 
                   
                 </div>
                 <div class="contact-right">
+                    <h1>Book A Session</h1>
                     <form  action="https://formspree.io/f/xwkgbbwa" method="POST">
                        
                         <!-- Input fields from the first form -->
@@ -319,6 +326,8 @@
 
 
 </script>
+
+
 
     
 </body>

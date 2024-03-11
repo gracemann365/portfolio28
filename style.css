@@ -13,6 +13,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
 .video-background {
   position: fixed;
   top: 0;
@@ -28,36 +29,32 @@
   min-height: 100%;
 }
 
-body{
-  
-    color:#fff;
-
+body {
+  color: #ffffff;
 }
 
 #header {
-    width: 100%;
-    height: 100vh;
-    background-image: url("icons/bgp2.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right bottom -160px; /* Add a top margin of 20 pixels */
+  width: 100%;
+  height: 100vh;
+  background-image: url("icons/bgp2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom -160px; /* Adjust as needed */
+  border-radius: 20px; /* Add rounded corners */
+  overflow: hidden; /* Hide overflow content to maintain rounded corners */
 }
 
-
-.container{
-    padding: 10px 10;
-     
+.container {
+  padding: 10px 10;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.342); /* Adjust the values as needed */
-    
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.342); /* Adjust the values as needed */
 }
-
 
 .logo {
   font-size: 36px;
@@ -75,579 +72,644 @@ nav{
   color: #fff;
 }
 
-nav ul li{
-
-        display: inline-block;
-        list-style: none;
-        margin: 0px 30px;
-        padding-bottom: 20px;
-        
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px;
+  padding-bottom: 20px;
+  font-family: "Orbitron", sans-serif; /* Apply Orbitron font to navigation items */
+  font-weight: bold; /* Increase font thickness */
 }
 
-nav ul li a{
-    color:#ffffff;
-    text-decoration:none;
-    font-size: 18px;
-    position:relative;
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
 }
 
-
-nav ul li a::after{
-    content:'';
-    width:0;
-    height:3px;
-    background:#ff004f;
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    transition:0.5s;
-
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
 }
 
-nav ul li a:hover::after{
-
-    width:100%;
-
+nav ul li a:hover::after {
+  width: 100%;
 }
 
-.header-text{
-
-   
-    padding-left: 20%;
-    font-size:30px;
-
+.header-text {
+  padding-left: 20%;
+  font-size: 30px;
 }
 
-.header-text h1{
- 
-    font-size:60px;
-    margin-top:10px;
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 10px;
 }
 
-.header-text span{
-    color:#08b605;
+.header-text span {
+  color: #08b605;
 }
-
 
 /**Get To Know me **/
-
-#about{
-    margin-top: 200px;
-    padding: 140px 0;
-    color:#ffffff;
+#about {
+  margin-top: 50px;
+  padding: 140px 0;
+  color: #ffffff;
 }
 
-.about span{
-    color:#08b605;
+.about span {
+  color: #08b605;
 }
 
-.row{
-
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.about-col-1{
-    flex-basis:30%;
+.about-col-1 {
+  position: relative; /* Add relative positioning to contain absolutely positioned elements */
+  
 }
 
-.about-col-1 img{
-    width:100%;
-    border-radius :30px;
+.about-col-2 {
+  flex-basis: 50%;
+  background-color: #012800; /* Set the background color */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 20px; /* Add border radius for rounded corners */
+  transition: background-color 0.5s, box-shadow 0.5s; /* Add transition effect */
+ 
 }
 
-.about-col-2{
-
-    flex-basis:50%
+.about-col-2:hover {
+  background-color: rgba(0, 0, 0, 0.732); /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  box-shadow: 0px 10px 15px rgb(253, 252, 252); /* Add a slight lifting effect on hover */
 }
 
-.subtitle{
-    font: size 80px;
-    font-weight: 600;
-    
-    
-
+.subtitle {
+  font-size: 80px;
+  font-weight: 600;
 }
 
-.tab-titles{
-
-    display:flex;
-    margin: 20px 0 40px;
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
 }
 
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px ;
-    font-weight: 500;
-    cursor:pointer;
-    position: relative;
-
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 
-.tab-links::after{
-    content:'';
-    width:0;
-    height:3px;
-    background:#ff004f;
-    position:absolute;
-    left: 0;
-    bottom:-8px;
-    transition:0.5s;
-
+.tab-links::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
 }
 
-.tab-links.active-link::after{
-    width:50%;
+.tab-links.active-link::after {
+  width: 50%;
 }
 
-.tab-contents ul li{
-
-        list-style: none;
-        margin: 45px 0;
-
-
+.tab-contents ul li {
+  list-style: none;
+  margin: 45px 0;
 }
 
-.tab-contents ul li span{
-
-   color:#08b605;
-   font-weight: 710;
-   font-size: 22px;
-    
-
+.tab-contents ul li span {
+  color: #08b605;
+  font-weight: 710;
+  font-size: 22px;
 }
 
-.tab-contents{
-    display:none;
+.tab-contents {
+  display: none;
 }
 
-.tab-contents.active-tab{
-    display:block
+.tab-contents.active-tab {
+  display: block;
 }
 
-
-
-/**Consultant**/    
-#consultant{
-    padding : 160px 40px;
+/**Consultant**/
+#consultant {
+  padding: 160px 40px;
 }
 
 .mini-container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh; /* This is optional and ensures the content is vertically centered on the viewport */
-  }
-
-  .mini-container h1{
-    font-size: 60px;
-    font-weight: 100;
-  }
-
-.consult-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px;
-    margin-top:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; /* This is optional and ensures the content is vertically centered on the viewport */
 }
 
-
-.consult-list div{
-
-    background:#042904;
-    padding:40px;
-    border-right:10px;
-    font-weight: 300;
-    border-right: 10px;
-    transition: background 0.5s ,transform 0.5s;
-    border-radius: 30px;
-
-
-}
-.consult-list div a{
-    text-decoration: none;
-    color: #fff;
-    margin-top: 20px;
-    display:inline-block;
+.mini-container h1 {
+  font-size: 60px;
+  font-weight: 100;
 }
 
-
-.consult-list div:hover{
-        background:#047204e1;
-        transform:translateY(-10px);
+.consult-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-/**Portfolio**/   
+.consult-list div {
+  background: #042904;
+  padding: 40px;
+  font-weight: 300;
+  transition: background 0.5s, transform 0.5s;
+  border-radius: 30px;
+}
 
-#portfolio{
-    padding:50px 50px;
-    margin-top:300px
+.consult-list div a {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.consult-list div:hover {
+  background-color: rgba(0, 0, 0, 0.821); /* Change background color on hover */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  box-shadow: 0px 10px 15px rgb(253, 252, 252); /* Add a slight lifting effect on hover */
+  transform: translateY(-10px);
+}
+
+/**Portfolio**/
+#portfolio {
+  padding: 50px 50px;
+  margin-top: 100px;
 }
 
 .mini-container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 60vh; /* This is optional and ensures the content is vertically centered on the viewport */
-  }
-
-  .mini-container h1{
-    font-size: 60px;
-    font-weight: 600;
-  }
-
-  .work-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap:40px;
-    margin-top:50px;
-  }
-
-
-  .work {
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    height: 600px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* This is optional and ensures the content is vertically centered on the viewport */
 }
 
-
-
-  .work img{
-
-    width :100%;
-    height: 100%;
-    border-radius:10px;
-    display:block;
-    transition:transform 0.8s;
-  }
-
-
-  .layer{
-
-    width:100%;
-    height:0;
-    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
-    border-radius:10px;
-    position:absolute;
-    left:0;
-    bottom:0;
-    overflow:hidden;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-direction:column;
-    padding:0 40px;
-    text-align:center;
-    font-size:15px;
-
-    transition:height 0.8s;
-  }
-
-
-  .layer h3{
-    font-size: 25px;
-    font-weight:500;
-    margin-bottom:20px;
-
-  }
-
-  .layer a{
-    margin-top:20px;
-    color:#ff004f;
-    text-decoration:none;
-    font-size:18px;
-    line-height:60px;
-    width:60px;
-    background:#fff;
-    height:60px;
-    border-radius:50%;
-    text-align: center;
-  }
-
-  .work:hover img{
-
-    transform:scale(1.2);
-  }
-
-  .work:hover  .layer{
-    height:100%;
-  } 
-
-
-/**contancts**/   
-
-#contacts{
-    margin-top: 251px;
-    margin-bottom: 251px;
+.mini-container h1 {
+  font-size: 60px;
+  font-weight: 600;
 }
 
-
-.contact-left{
-    padding-left: 45px;
-    margin-top: 250px;
-    flex-basis:35%;
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-
-
-.title{
-
-   
-    font-weight:400;
-    font-size: 70px;
-    padding-bottom:20px;
-
-
-
+.work {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 600px; /* Adjust the height as needed */
 }
 
-.contact-right{
-    padding-left: 45px;
-    margin-top: 250px;
-    flex-basis:60%;
+.work img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.8s;
 }
 
-
-.contact-left p{
-    margin-top: 30px;
-
+.layer {
+  width: 100%;
+  height: 0;
+  /*background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);- i have inline overrided for individual hover color ;)*/ 
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 15px;
+  transition: height 0.8s;
 }
 
-.contact-left p i{
-    color:#08b605;
-    margin-right:15px;
-    font-size:25px;
-    padding-left: 20px;
-}
-.socials{
-    margin-top: 50px;
-    padding-left:20px;
+.layer h3 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
 }
 
-.socials i{
-
-    padding-right:70px;
-    font-size: 30px;
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  width: 60px;
+  background: #fff;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.socials a{
-
-    text-decoration: none;
-    color:#08b605;;
-    display: inline-block;
-    transition:transform 0.5s;
+.work:hover img {
+  transform: scale(1.2);
 }
 
+.work:hover .layer {
+  height: 100%;
+}
 
-.socials a:hover{
-    color:#ff004f;
-    transform:translateY(-12px);
+/**Contacts**/
+#contacts {
+  margin-top: 251px;
+  margin-bottom: 251px;
+}
+
+.contact-left {
+  padding-left: 45px;
+  margin-top: 250px;
+  flex-basis: 35%;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.contact-right {
+  padding-left: 45px;
+  margin-top: 250px;
+  flex-basis: 60%;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left p i {
+  color: #08b605;
+  margin-right: 15px;
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.socials {
+  margin-top: 50px;
+  padding-left: 20px;
+}
+
+.socials i {
+  padding-right: 70px;
+  font-size: 30px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #08b605;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.socials a:hover {
+  color: #ff004f;
+  transform: translateY(-12px);
 }
 
 /* Button Styles */
 .btn {
-    margin: 50px 20px;
-    
-    padding: 10px 20px;
-    border: none;
-    background-color: #0cef14; /* Green color */
-    color: #000000; /* White text color */
-    font-size: 24px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none; /* Removes underline for links */
-    display: inline-block;
-  }
-  
-  .btn:hover {
-    background-color: #d0f637; /* Darker green on hover */
-  }
+  margin: 50px 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0cef14; /* Green color */
+  color: #000000; /* White text color */
+  font-size: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Removes underline for links */
+  display: inline-block;
+}
 
+.btn:hover {
+  background-color: #d0f637; /* Darker green on hover */
+}
 
-  .contanct-right form{
+.contanct-right form {
+  width: 80%;
+}
 
-    width:80%;
+form input,
+form textarea {
+  width: 80%;
+  border: 0;
+  outline: none;
+  background: #dffddca3;
+  padding: 15px 50px;
+  margin: 15px;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 20px;
+}
 
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: rgb(6, 255, 6);
+  margin-top: 200px;
+  color: #000000;
+}
 
-  }
-
-  form input,form textarea{
-    width:80%;
-    border:0;
-    outline:none;
-    background:#dffddca3;
-    padding:15px 50px;
-    margin:15px;
-    color:#000000;
-    font-size: 18px;
-    border-radius: 20px;
-  }
-  
-  
-
-  .copyright{
-    width:100%;
-    text-align: center;
-    padding:25px 0;
-    background: rgb(6, 255, 6) ;
-    margin-top: 200px;
-    color: #000000;
-
-  }
-
-
-
-  /* Button Styles */
+/* Button Styles */
 .back-to-home-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 40px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #000000b3;
-    color: #ffffff;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    z-index: 9999; /* Ensures the button appears on top of other elements */
-    transition: background-color 0.3s ease;
-  }
-  
-  .back-to-home-btn:hover {
-    background-color: #2078b5;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #000000b3;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  z-index: 9999; /* Ensures the button appears on top of other elements */
+  transition: background-color 0.3s ease;
+}
 
-  .back-to-home-btn i{
-    width:100%;
-  }
+.back-to-home-btn:hover {
+  background-color: #2078b5;
+}
+
+.back-to-home-btn i {
+  width: 100%;
+}
+
 
 /**responsive for small screens**/
+nav .fa-solid{
+  display : none;
+}
+@media only screen and (max-width: 600px) {
+  #header{
+      background-image:url(icons/bgp2.png);
+
+  }
+
+  .header-text{
+      margin-top:15%;
+      font-size:15px;
+  }
+
+  .header-text h1{
+      font-size:25px;
+      padding-right: 30px;
+  }
+
   nav .fa-solid{
-    display : none;
+      display : block;
+      font-size:25px;
+    }
+
+  nav ul{
+      background-image: linear-gradient(135deg, rgba(0, 253, 51, 0.5), rgba(0, 253, 51, 0.9)); /* Greenish gradient */
+      backdrop-filter: blur(10px); /* Add a blur effect to create a glass-like appearance */
+      -webkit-backdrop-filter: blur(10px); /* For Safari support */
+      border-radius: 10px; 
+      position:fixed;
+      top:0;
+      right:-200px;
+      width:200px;
+      height:100vh;
+      padding-top:50px;
+      z-index:2;
+      transition:right 0.5s;
   }
-  @media only screen and (max-width: 600px) {
-    #header{
-        background-image:url(icons/bgp2.png);
 
-    }
-
-    .header-text{
-
-        margin-top:15%;
-        font-size:15px;
-    }
-
-
-    .header-text h1{
-        font-size:25px;
-        padding-right: 30px;
-    }
-
-    nav .fa-solid{
-        display : block;
-        font-size:25px;
-      }
-
-      nav ul{
-        background-image: linear-gradient(135deg, rgba(0, 253, 51, 0.5), rgba(0, 253, 51, 0.9)); /* Greenish gradient */
-    backdrop-filter: blur(10px); /* Add a blur effect to create a glass-like appearance */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-       border-radius: 10px; 
-       position:fixed;
-        top:0;
-        right:-200px;
-        width:200px;
-        height:100vh;
-        padding-top:50px;
-        z-index:2;
-
-        transition:right 0.5s;
-
-
-
-      }
-
-      nav ul li{
-                display:block;
-                margin:25px;
-
-
-      }
-
-    
-      nav ul .fa-solid{
-        position:absolute;
-        top:25px;
-        left:25px;
-        cursor:pointer;
-
-      }
-
-      nav .fa-solid.fa-bars{
-        margin-right: 30px;
-      }
-
-
-      #about .subtitle{
-        font-size: 40px;
-       
-      }
-
-      #about .about-col-2 {
-        margin-left: 20px;
-        margin-right: 20px;
-        
-      }
-
-      #about .about-col-1, .about-col-2{
-        flex-basis:100%
-      }
-
-      #about .about-col-1{
-        margin-bottom:20px;
-      }
-
-      #about .about-col-2 p{
-        font-size: 12px;
-      }
-
-      #about .about-col-2 .tab-titles .tab-links{
-        font-size: 11px;
-        font-weight: 600;
-        color:#00ff22;
-      }
-
-      #about .about-col-2 .tab-contents li{
-        font-size: 80%;
-      }
-
-      #about .about-col-2 .tab-contents span{
-        font-size:120%;
-      }
-
-      .contact-left,.contact-right{
-            flex-basis: 100%;
-      }
-      #contacts .title{
-
-        font-size:50px;
-
-      }
-
-      #contacts .contact-left .socials i{
-                padding-right: 60px;
-
-      }
-
-      #contacts .contact-left form{
-        margin-top: none;
-      }
+  nav ul li{
+      display:block;
+      margin:15px; /* Reduced margin */
   }
+
+  nav ul .fa-solid{
+      position:absolute;
+      top:25px;
+      left:25px;
+      cursor:pointer;
+  }
+
+  nav .fa-solid.fa-bars{
+      margin-right: 30px;
+  }
+
+  #about .subtitle{
+      font-size: 30px; /* Reduced font size */
+  }
+
+  #about .about-col-2 {
+      margin-left: 10px; /* Reduced margin */
+      margin-right: 10px; /* Reduced margin */
+  }
+
+  #about .about-col-1, .about-col-2{
+      flex-basis:100%
+  }
+
+  #about .about-col-1{
+      margin-bottom:10px; /* Reduced margin */
+  }
+
+  #about .about-col-2 p{
+      font-size: 12px;
+  }
+
+  #about .about-col-2 .tab-titles .tab-links{
+      font-size: 11px;
+      font-weight: 600;
+      color:#00ff22;
+  }
+
+  #about .about-col-2 .tab-contents li{
+      font-size: 80%;
+  }
+
+  #about .about-col-2 .tab-contents span{
+      font-size:120%;
+  }
+
+  .contact-left, .contact-right{
+      flex-basis: 100%;
+  }
+
+  #contacts .title{
+      font-size:40px; /* Reduced font size */
+  }
+
+  #contacts .contact-left .socials i{
+      padding-right: 40px; /* Reduced padding */
+  }
+
+  #contacts .contact-left form{
+      margin-top: none; /* Removed margin-top */
+  }
+  #portfolio {
+    margin-top: -200px; /* Adjusted margin-top */
+   
+}
+#contacts {
+  margin-top: -150px; /* Adjusted margin-top */
+ 
+}
+#consultant{
+
+  margin-top: -250px; /* Adjusted margin-top */
+}
+}
+
+
+
+
   
+/**original responsive for small screens
+nav .fa-solid{
+  display : none;
+}
+@media only screen and (max-width: 600px) {
+  #header{
+      background-image:url(icons/bgp2.png);
+
+  }
+
+  .header-text{
+
+      margin-top:15%;
+      font-size:15px;
+  }
+
+
+  .header-text h1{
+      font-size:25px;
+      padding-right: 30px;
+  }
+
+  nav .fa-solid{
+      display : block;
+      font-size:25px;
+    }
+
+    nav ul{
+      background-image: linear-gradient(135deg, rgba(0, 253, 51, 0.5), rgba(0, 253, 51, 0.9)); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+     border-radius: 10px; 
+     position:fixed;
+      top:0;
+      right:-200px;
+      width:200px;
+      height:100vh;
+      padding-top:50px;
+      z-index:2;
+
+      transition:right 0.5s;
+
+
+
+    }
+
+    nav ul li{
+              display:block;
+              margin:25px;
+
+
+    }
+
+  
+    nav ul .fa-solid{
+      position:absolute;
+      top:25px;
+      left:25px;
+      cursor:pointer;
+
+    }
+
+    nav .fa-solid.fa-bars{
+      margin-right: 30px;
+    }
+
+
+    #about .subtitle{
+      font-size: 40px;
+     
+    }
+
+    #about .about-col-2 {
+      margin-left: 20px;
+      margin-right: 20px;
+      
+    }
+
+    #about .about-col-1, .about-col-2{
+      flex-basis:100%
+    }
+
+    #about .about-col-1{
+      margin-bottom:20px;
+    }
+
+    #about .about-col-2 p{
+      font-size: 12px;
+    }
+
+    #about .about-col-2 .tab-titles .tab-links{
+      font-size: 11px;
+      font-weight: 600;
+      color:#00ff22;
+    }
+
+    #about .about-col-2 .tab-contents li{
+      font-size: 80%;
+    }
+
+    #about .about-col-2 .tab-contents span{
+      font-size:120%;
+    }
+
+    .contact-left,.contact-right{
+          flex-basis: 100%;
+    }
+    #contacts .title{
+
+      font-size:50px;
+
+    }
+
+    #contacts .contact-left .socials i{
+              padding-right: 60px;
+
+    }
+
+    #contacts .contact-left form{
+      margin-top: none;
+    }
+}
+**/
