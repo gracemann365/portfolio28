@@ -85,6 +85,7 @@
                     <p class="tab-links active-link" onclick="opentab('Skill-Set')">Skills</p>
                     <p class="tab-links " onclick="opentab('Work-Experience')">Experience</p>
                     <p class="tab-links " onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Gallery')">Gallery</p>
                 </div>
                 <div class="tab-contents active-tab" id="Skill-Set">
                     <ul>
@@ -107,6 +108,14 @@
                         <li><span>GEC Bartonhill Trivandrum</span><br>BTECH - Information Technology</li>
                     </ul>
                 </div>
+                <div class="tab-contents" id="Gallery">
+                    <ul>
+                        <li><a href="commerce.html" style="text-decoration: none; color: #0bff0f; font-weight: bold;">Click Me Sensei</a><br>See My Pictures</li>
+
+                    </ul>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -182,7 +191,7 @@
                 <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);">
                     <h3>Dhamaka-OTT API</h3>
                     <p>Built with Node.js, Express.js, TypeScript, MongoDB Atlas, Jest, and PowerShell. Enables seamless management of OTT movies via a backend RESTful API with robust testing and automation. Empowers administrators with secure access controls and role-based permissions for data management.</p>
-                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                    <a href="https://github.com/gracemann365/Dhamaka-OTT-API"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
                 </div>
             </div>
         
@@ -191,7 +200,7 @@
                 <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);">
                     <h3>HIDS (Home Intrusion Detection System)</h3>
                     <p>Built with Python, OpenCV, Flask, HTML, CSS, JS, YOLOv8, SMTP. Empowers with computer vision monitoring, humanoid detection, alarm trigger, and SMTP alerts for home security.</p>
-                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                    <a href="https://github.com/gracemann365/HIDS-vBleedingEdge"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
                 </div>
             </div>
         
@@ -209,7 +218,7 @@
                 <div class="layer" style="background: linear-gradient(rgba(0, 0, 0, 0.6), #3f05eec5);">
                     <h3>EsSML </h3>
                     <p> EsSML (Emotionaly Sentient System using ML) leverages ML , OpenCV to detect emotions, displaying them on a Flask web app with auto-routed mood-based YouTube playlists for immersive experiences.</p>
-                    <a href="come.html"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
+                    <a href="https://github.com/gracemann365/EsSML"><i class="fa-solid fa-up-right-from-square" style="color: #ff0505;"></i></a>
                 </div>
             </div>
         
@@ -280,7 +289,12 @@
 </div>
 
 
-
+<script>
+    function opentab(tabName) {
+        // Assuming tabName is lowercase and matches the page name
+        window.location.href = tabName + '.html';
+    }
+    </script>
 
 
  
