@@ -65,7 +65,7 @@
 
 <br>
 <br>
-<a href="#" class="back-to-home-btn"><i class="fa-solid fa-arrow-up" style="color: #00ff04;"></i></a>
+<a href="#" class="back-to-home-btn" ><i class="fa-solid fa-arrow-up" style="color: #00ff04;"></i></a>
  <!--about-->   
  <div id="about">
     <div class="container">
@@ -140,8 +140,8 @@
                     
                     <h2>Machine Learning  <i class="fa-solid fa-robot" style="color:#08b605;">  </i></h2>
                     <br> 
-                    <p style="flex-basis: 30%; text-align: left;">Let's ace Sem 6 with ML & DL mini projects.</p>
-                    <p style="flex-basis: 30%; text-align: left;">Together, we'll learn, innovate, and succeed!</p>
+                    <p style="flex-basis: 30%; text-align: left;">Let's ace Sem 6 with ML & DL <br>mini projects.Together, we'll learn, innovate, and succeed!</p>
+                    <p style="flex-basis: 30%; text-align: left;"></p>
                     <br>
                     <a href="#contacts">Learn More Call Now 📲 </a>
                 </div>
@@ -149,23 +149,19 @@
                 <div>
                     <h2>Full Stack Development <i class="fa-solid fa-code" style="color: #08b605;"></i></h2>
                     <br> 
-                        <p style="flex-basis: 30%; text-align:  left;">Experience MERN Full Stack at S6 Mini Project.</p>
-                        <p style="flex-basis: 30%; text-align:  left;">Crafting dynamic websites with MongoDB,Express,</p>
-                        <p style="flex-basis: 30%; text-align: left;">React, Node for future success.</p>
-                        <br>
-                      
+                        <p style="flex-basis: 30%; text-align:  left;">Experience MERN Full Stack at S6 Mini Project.Crafting dynamic websites with MongoDB,Express,React, Node for future success.</p>
+                        <p style="flex-basis: 30%; text-align: left;"></p>
+    
                         <a href="#contacts">Learn More Call Now 📲 </a>
                 </div>
 
                 <div>
                     <h2>S8 Main Project <i class="fa-solid fa-user-tie" style="color: #08b605;"></i></h2>
                     <br> 
-                        <p style="flex-basis: 30%; text-align: left;">Offering comprehensive support in diverse</p>
-                        <p style="flex-basis: 30%; text-align: left;">domains. Tailored solutions, expert guidance</p>
-                        <p style="flex-basis: 30%; text-align: left;">for a successful project journey.</p>
+                        <p style="flex-basis: 30%; text-align: left;">Offering comprehensive support in diversedomains. Tailored solutions, expert guidance for a successful project journey.</p>
                         <br>
                       
-                        <a href="#contacts">Learn More Call Now 📲 </a>
+                        <a href="#contacts">Learn More Call Now   </a>  <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                 </div>
 
 
@@ -251,21 +247,23 @@
 
             <div class="row">
 
-                <div class="contact-left">
-                    <h1 class="title" style="font-weight: bold;">Get In Touch</h1>
-                    <p><i class="fa-solid fa-envelope" style="color: #19f550;"></i><a href="mailto:gracemann365@gmail.com" style="text-decoration: none; color: inherit;">gracemann365@gmail.com</a></p>
+                <div class="contact-left" style="font-weight: bold; text-align: center;">
+                    <h1 class="title" style="font-weight: bold; text-align: center;">Get In Touch</h1>
+
+                    <p ><i class="fa-solid fa-envelope" style="color: #19f550;"></i><a href="mailto:gracemann365@gmail.com" style="text-decoration: none; color: inherit;">gracemann365@gmail.com</a></p>
                      <div class="socials">
                         <a href="https://www.linkedin.com/in/david-grace/"><i class="fa-brands fa-linkedin" ></i></a>
                         <a href="https://github.com/Gracemann365"><i class="fa-brands fa-github" ></i></a>
                         <a href="https://leetcode.com/Gracemann365/"><i class="fa-solid fa-code" ></i></a>
                         <a href="https://codeforces.com/profile/gracemann111"><i class="fa-solid fa-bug"></i></a>
+                    
                      </div>
                      <a href="https://drive.google.com/file/d/16Byq8E8komaLFG1eKzQMepLZrF-Cye2C/view?usp=sharing" class="btn" download>Download Resume</a>
 
                   
                 </div>
-                <div class="contact-right">
-                    <h1>Book A Session</h1>
+                <div class="contact-right" style="font-weight: bold; text-align: center;">
+                    <h1 class="title" style="font-weight: bold" >Book Session</h1>
                     <form  action="https://formspree.io/f/xwkgbbwa" method="POST">
                        
                         <!-- Input fields from the first form -->
@@ -341,7 +339,12 @@
 
 </script>
 
-
+<script>
+    document.querySelector('.back-to-home-btn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Smoothly scroll to the top
+    });
+    </script>
 
     
 </body>

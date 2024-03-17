@@ -459,7 +459,7 @@ form textarea {
 }
 
 .back-to-home-btn:hover {
-  background-color: #2078b5;
+  background-color: #000000b3;
 }
 
 .back-to-home-btn i {
@@ -493,7 +493,7 @@ nav .fa-solid{
     }
 
   nav ul{
-      background-image: linear-gradient(135deg, rgba(0, 253, 51, 0.5), rgba(0, 253, 51, 0.9)); /* Greenish gradient */
+      background-image: linear-gradient(135deg, rgba(6, 79, 4, 0.336), rgba(1, 71, 15, 0.9)); /* Greenish gradient */
       backdrop-filter: blur(10px); /* Add a blur effect to create a glass-like appearance */
       -webkit-backdrop-filter: blur(10px); /* For Safari support */
       border-radius: 10px; 
@@ -563,11 +563,11 @@ nav .fa-solid{
   }
 
   #contacts .title{
-      font-size:40px; /* Reduced font size */
+      font-size:60px; /* Reduced font size */
   }
 
   #contacts .contact-left .socials i{
-      padding-right: 40px; /* Reduced padding */
+    flex: 0 0 auto; 
   }
 
   #contacts .contact-left form{
