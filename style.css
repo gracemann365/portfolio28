@@ -568,6 +568,8 @@ nav .fa-solid{
 
   #contacts .contact-left .socials i{
     flex: 0 0 auto; 
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   #contacts .contact-left form{
